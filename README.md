@@ -1,16 +1,13 @@
-### Hi there 👋
 
-<!--
-**anseongmin02/anseongmin02** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started: yes
-
-- 🔭 I’m currently working on.. academy
-- 🌱 I’m currently learning ... mathematic
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+n = str(input("숫자를 입력하시오: "))
+if n.isdecimal():
+  n = int(n)
+  if n <= 30:
+    for i in range(1, n + 1):
+      for j in range(1, i + 1):
+        print(j,end="")
+      print()
+  else:
+    print("너무 많습니다")
+else:
+  print("정수를 입력해 주세요")
